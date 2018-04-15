@@ -3,7 +3,7 @@ package com.file.IO;
 import java.io.*;
 
 /**
- * 缂撳啿瀛楃娴乨emo
+ * 缓冲字符流demo
  * @author Administrator
  *
  */
