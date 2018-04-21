@@ -1,13 +1,15 @@
 package com.file.IO;
 
 import java.io.IOException;
-import java.io.ObjectInputStream.GetField;
 
-import javax.swing.text.html.parser.Entity;
-
+import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.*;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+
+
+
 
 public class httpGetDemo {
 
@@ -23,12 +25,11 @@ public class httpGetDemo {
 			//发送get请求
 			httpResponse = httpClient.execute(get);
 			try {
-				//response实体
 				HttpEntity entity = httpResponse.getEntity();
 				if(null != entity){
 					System.out.println("响应状态码是："+httpResponse.getStatusLine());
 					System.out.println("-------------------------------------------------");
-					System.out.println("响应内容是："+EntityUtils.toString(entity));
+					
 				
 				}
 				
