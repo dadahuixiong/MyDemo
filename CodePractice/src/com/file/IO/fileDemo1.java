@@ -1,7 +1,11 @@
 package com.file.IO;
 
 import java.io.File;
-
+/**
+ * 查询文件递归
+ * @author Administrator
+ *
+ */
 public class fileDemo1 {
 
 	public static void main(String[] args) {
